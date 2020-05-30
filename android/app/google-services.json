@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "43969088999",
+    "firebase_url": "https://pd-karte.firebaseio.com",
+    "project_id": "pd-karte",
+    "storage_bucket": "pd-karte.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43969088999:android:7ba977d0feee8ee6cb8142",
+        "android_client_info": {
+          "package_name": "com.example.pd_carnet_native"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43969088999-6me8b7825pb9vlfth0o27ij035hrvqke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDByBQNNBvCnZyu0uEkU7gzaqzFiwmb1fA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43969088999-6me8b7825pb9vlfth0o27ij035hrvqke.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "43969088999-trj2et0umjhsje7sdee15u108auc1d7c.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pdCarnetNative"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

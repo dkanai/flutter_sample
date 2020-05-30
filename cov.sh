@@ -1,0 +1,1 @@
+cat coverage/index.html | egrep "coverFile|coverPerLo|coverPerMed|coverPerHi" | egrep -v 'coverPerHi">-' | awk '{if(NR%2)ORS=" ";else ORS="\n";print}' | egrep -v "repository" | awk -F '[^0-9]+' 'BEGIN{OFS=""}{$1=$1;print $0}' | sed -e 's/.$//' | awk '{sum+=$1} END {print sum/NR}'
