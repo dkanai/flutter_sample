@@ -13,16 +13,12 @@ class ArticleWidget extends StatelessWidget {
       child: Column(
         children: <Widget>[
           ListTile(
-              key: Key('article-${article.id}'),
-              onTap: () {
-//                Navigator.of(context).push(Navigation(SchoolFavoriteScreen.screenTitle + ' (' + item.name + ')').next(SchoolFavoriteScreen(item.id)));
-              },
-              leading: const Icon(Icons.book),
               title: Row(
-                children: <Widget>[
-                  Text(article.name),
-                ],
-              )),
+            children: <Widget>[
+              Text(article.id.toString()),
+              Text(article.name),
+            ],
+          )),
         ],
       ),
     ));

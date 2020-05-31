@@ -32,11 +32,11 @@ class WebDriver {
   }
 
   Future tapByType(String targetType) async {
-    await driver.tap(find.byType(targetType), timeout: const Duration(seconds: 50));
+    await driver.tap(find.byType(targetType), timeout: const Duration(seconds: 5));
   }
 
   Future tapByKey(String key) async {
-    await driver.tap(find.byValueKey(key), timeout: const Duration(seconds: 50));
+    await driver.tap(find.byValueKey(key), timeout: const Duration(seconds: 5));
   }
 
   Future enterText(String id, String value) async {

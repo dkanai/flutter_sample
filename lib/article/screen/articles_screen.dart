@@ -15,23 +15,19 @@ class _ArticlesScreenState extends State<ArticlesScreen> {
   Widget build(BuildContext context) {
     return FutureBuilder<List<Article>>(
       future: DI.articleRepository().all(),
-      builder: (context, snapshot) {
-        if (snapshot.hasData == false) {
-          return CircularProgressIndicator();
-        }
-        return Column(children: buildFavoriteGroup(snapshot));
+      builder: (context, articles) {
+        if (articles.hasData == false) return CircularProgressIndicator();
+        return listView(articles);
       },
     );
   }
 
-  List<Widget> buildFavoriteGroup(AsyncSnapshot<List<Article>> snapshot) {
-    return [
-      ListView.builder(
-          shrinkWrap: true,
-          itemCount: snapshot.data.length,
-          itemBuilder: (context, index) {
-            return ArticleWidget(snapshot.data[index]);
-          })
-    ];
+  Widget listView(AsyncSnapshot<List<Article>> articles) {
+    return ListView.builder(
+        shrinkWrap: true,
+        itemCount: articles.data.length,
+        itemBuilder: (context, index) {
+          return ArticleWidget(articles.data[index]);
+        });
   }
 }
