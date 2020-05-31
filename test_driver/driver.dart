@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter_driver/flutter_driver.dart';
 
-class WebDriver {
+class Driver {
   FlutterDriver driver;
 
   Future init() async {

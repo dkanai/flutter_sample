@@ -1,9 +1,9 @@
 import 'package:test/test.dart';
 
-import 'web_driver.dart';
+import 'driver.dart';
 
 void main() {
-  WebDriver d = WebDriver();
+  Driver d = Driver();
   setUpAll(() async => await d.init());
   tearDownAll(() async => d.close());
 
