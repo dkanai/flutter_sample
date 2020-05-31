@@ -24,7 +24,7 @@ run-ios:
 run-web:
 	flutter run -d chrome
 deploy:
-	make ut && flutter build web && cd build/web && surge . pdcarnet.surge.sh
+	make ut && flutter build web && cd build/web && surge . xxxxx.surge.sh
 
 # metrics #######################
 cov-num:
