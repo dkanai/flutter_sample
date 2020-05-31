@@ -1,5 +1,5 @@
 ## command
-See Makefile
+- See Makefile
 
 ## structure
 - screen
@@ -16,14 +16,14 @@ See Makefile
 - test_driver
   - e2e test
  
-## widget_test
+## widget test
 - it usually mock data source layer
   - there is simple DI class for mock. it can change to better solution
   - there is simple DataFactory class for setup data source. it can change to better solution
 - it really help test for UI event and refactoring widget structure with good speed
 
 ## e2e test
-- there is WebDriver which is wrapper of raw Driver
+- there is Driver which is wrapper of raw Driver
 
 ## web build
 - flutter app can build to web app(just javascript files)
